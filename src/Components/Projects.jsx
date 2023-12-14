@@ -36,7 +36,6 @@ function Projects() {
 
     useEffect(() => {
 
-        if (size > 900) {
             gsap.from(headingRef.current, {
                 translateX: '-1000px',
                 duration: 1.1,
@@ -87,7 +86,6 @@ function Projects() {
                     toggleActions: 'play none none none',
                 },
             })
-        }
     }, [])
 
     return (

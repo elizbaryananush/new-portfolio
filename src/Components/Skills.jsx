@@ -20,7 +20,6 @@ function Skills() {
 
     useEffect(() => {
 
-        if (size > 900) {
             gsap.from(headingRef.current, {
                 translateX: '-1000px',
                 duration: 1.1,
@@ -45,7 +44,6 @@ function Skills() {
                     toggleActions: 'play none none none',
                 },
             })
-        }
     }, [])
     return (
         <div className='Skills' id='Skills'>

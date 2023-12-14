@@ -13,7 +13,6 @@ function Hero() {
 
     useEffect(() => {
 
-        if (size > 900) {
             gsap.from(textRef.current, {
                 translateX: '-1000px',
                 duration: 1.1,
@@ -33,7 +32,6 @@ function Hero() {
                 opacity: 0,
                 ease: 'power3.in',
             })
-        }
     })
     return (
         <div className='Hero'>
