@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useState , useEffect, useRef } from 'react'
 import image1 from '../assets/html.png'
 import image2 from '../assets/css.png'
 import image3 from '../assets/javascript.png'
@@ -16,32 +16,36 @@ gsap.registerPlugin(ScrollTrigger);
 function Skills() {
     const headingRef = useRef(null)
     const cardsRef = useRef(null)
+    const [size, setSize] = useState(window.innerWidth);
 
     useEffect(() => {
-        gsap.from(headingRef.current, {
-            translateX: '-1000px',
-            duration: 1.1,
-            opacity: 0,
-            ease: 'power3.in',
-            scrollTrigger: {
-                trigger: headingRef.current,
-                start: 'top-=700px',
-                end: 'bottom center',
-                toggleActions: 'play none none none',
-            },
-        })
 
-        gsap.from(cardsRef.current , {
-            duration: 1.5,
-            opacity: 0,
-            ease: 'power3.in',
-            scrollTrigger: {
-                trigger: cardsRef.current,
-                start: 'top-=700px',
-                end: 'bottom center',
-                toggleActions: 'play none none none',
-            },
-        })
+        if (size > 900) {
+            gsap.from(headingRef.current, {
+                translateX: '-1000px',
+                duration: 1.1,
+                opacity: 0,
+                ease: 'power3.in',
+                scrollTrigger: {
+                    trigger: headingRef.current,
+                    start: 'top-=700px',
+                    end: 'bottom center',
+                    toggleActions: 'play none none none',
+                },
+            })
+
+            gsap.from(cardsRef.current, {
+                duration: 1.5,
+                opacity: 0,
+                ease: 'power3.in',
+                scrollTrigger: {
+                    trigger: cardsRef.current,
+                    start: 'top-=700px',
+                    end: 'bottom center',
+                    toggleActions: 'play none none none',
+                },
+            })
+        }
     }, [])
     return (
         <div className='Skills' id='Skills'>

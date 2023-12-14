@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
     return (
-        <div className='Footer'>
+        <div className='Footer' id='Footer'>
             <div className="icons">
                 <div className="icon">
                     <a href="https://t.me/AnushElizbaryan" target='_blank'>
