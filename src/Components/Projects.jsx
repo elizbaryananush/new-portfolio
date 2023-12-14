@@ -110,7 +110,7 @@ function Projects() {
                     <div className="text">
                         <div className="button"><p>2023-10</p></div>
                         <p className="heading">YourBanK</p>
-                        <p>In this project, I set out to create a <span>visually engaging and user-friendly</span> design for a modern banking website. The primary objective was to blend functionality with an intuitive and aesthetically pleasing interface to enhance the user experience . Figma template you can see <span><a href="https://www.figma.com/file/ILPQaZR1CWVtCSlqmZulQu/Banking-Company-Website-UI-Template-Design-in-Dark-Theme-(-FREE-Editable-)-(Community)?mode=dev" target='_blank'>here</a></span>.</p>
+                        <p className='par'>In this project, I set out to create a <span>visually engaging and user-friendly</span> design for a modern banking website. The primary objective was to blend functionality with an intuitive and aesthetically pleasing interface to enhance the user experience . Figma template you can see <span><a href="https://www.figma.com/file/ILPQaZR1CWVtCSlqmZulQu/Banking-Company-Website-UI-Template-Design-in-Dark-Theme-(-FREE-Editable-)-(Community)?mode=dev" target='_blank'>here</a></span>.</p>
                         <div onClick={() => {
                             window.location.href = 'https://yourbankae.vercel.app/'
                         }} className="button"> <p>View</p> <span>
@@ -124,7 +124,7 @@ function Projects() {
                     <div className="text">
                         <div className="button"><p>2023-04</p></div>
                         <p className="heading">Plantarium</p>
-                        <p>For this project, I embarked on the development of a vibrant and functional Plant Shop website <span>using React and Redux</span>. The primary goal was to create a seamless and enjoyable online shopping experience for plant enthusiasts,.</p>
+                        <p className='par'>For this project, I embarked on the development of a vibrant and functional Plant Shop website <span>using React and Redux</span>. The primary goal was to create a seamless and enjoyable online shopping experience for plant enthusiasts,.</p>
                         <div onClick={() => {
                             window.location.href = 'https://plantarium.vercel.app/'
                         }} className="button"> <p>View</p> <span>
@@ -140,7 +140,7 @@ function Projects() {
                     <div className="text">
                         <div className="button"><p>2023-11</p></div>
                         <p className="heading">MovieMingle</p>
-                        <p>In this project, I endeavored to create a dynamic and engaging movie website by <span>leveraging the power of APIs</span> . The primary objective was to provide users with a seamless and immersive experience, allowing them to discover, explore, and obtain information about a vast array of movies.</p>
+                        <p className='par'>In this project, I endeavored to create a dynamic and engaging movie website by <span>leveraging the power of APIs</span> . The primary objective was to provide users with a seamless and immersive experience, allowing them to discover, explore, and obtain information about a vast array of movies.</p>
                         <div onClick={() => {
                             window.location.href = 'https://moviemingleae.vercel.app/'
                         }} className="button"> <p>View</p> <span>
