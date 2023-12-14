@@ -804,6 +804,17 @@ h1 {
 }
 
 @media screen and (max-width : 1100px) and (min-width : 751px) {
+
+    .Hero {
+        .right {
+            width: 30%;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
     .Skills {
 
         h1 {
@@ -838,6 +849,37 @@ h1 {
 }
 
 @media screen and (max-width : 750px) {
+
+    .Navbar {
+        ul {
+            gap: 30px;
+
+            li {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .Hero {
+        padding: 0 10%;
+
+        .left {
+            .middle {
+                h1 {
+                    font-size: 70px;
+                }
+            }
+        }
+
+        .right {
+            display: none;
+        }
+
+        .roundtext {
+            display: none;
+        }
+    }
+
     .Skills {
         .cards {
             grid-template-columns: repeat(2, 1fr);
@@ -875,7 +917,7 @@ h1 {
                 border: 1px black solid;
                 gap: 15px;
 
-                .text{
+                .text {
                     gap: 15px;
                 }
 
@@ -921,11 +963,96 @@ h1 {
 
     .Projects {
         .box {
-            .text{
-                .par{
+            .text {
+                .par {
                     font-size: 14px !important;
                 }
             }
+        }
+    }
+}
+
+@media(max-width : 400px) {
+    .Navbar {
+        ul {
+            li {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .Hero {
+        .left {
+            .top {
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .middle {
+                h1 {
+                    font-size: 54px;
+                }
+            }
+
+            .bottom {
+                ul {
+                    display: flex;
+                    gap: 15px;
+
+                    li {
+                        a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .Skills{
+        h1{
+            font-size: 30px;
+            width: 200px;
+            text-align: center;
+        }
+
+        .cards{
+            gap: 20px;
+            .card{
+                width: 130px;
+                height: 130px;
+            }
+        }
+    }
+
+    .Projects{
+        .heading{
+            h1{
+                font-size: 30px !important;
+            }
+
+            p{
+                font-size: 12px;
+            }
+        }
+
+        .grid{
+            .box{
+                .heading{
+                    font-size: 22px !important;
+                }
+
+                .par{
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+
+    .Footer{
+        .icons{
+            gap: 15px;
         }
     }
 }
