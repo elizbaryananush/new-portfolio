@@ -53,7 +53,7 @@ function Hero() {
                             <a href="https://wa.me/+37477838224">whatsapp</a>
                         </li>
                         <li>
-                            <a href="">telegram</a>
+                            <a href="https://t.me/AnushElizbaryan">telegram</a>
                         </li>
                     </ul>
                 </div>
