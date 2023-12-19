@@ -47,10 +47,10 @@ function Hero() {
                 <div className="bottom">
                     <ul>
                         <li>
-                            <a href="">github</a>
+                            <a href="https://github.com/elizbaryananush">github</a>
                         </li>
                         <li>
-                            <a href="">whatsapp</a>
+                            <a href="https://wa.me/+37477838224">whatsapp</a>
                         </li>
                         <li>
                             <a href="">CV</a>
