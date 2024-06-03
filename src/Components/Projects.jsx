@@ -2,6 +2,8 @@ import React, { useState , useEffect } from 'react'
 import yourbank from '../assets/yourBank.png'
 import plantshop from '../assets/plantshop.png'
 import movie from '../assets/movie.png'
+import info from '../assets/info.png'
+import calc from '../assets/calc.png'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useRef } from 'react'
@@ -147,6 +149,36 @@ function Projects() {
                                 </svg>
                             </span>
                         </div>
+                    </div>
+                </div>
+                <div ref={projectRightRef} className="box">
+                    <div className="text">
+                        <div className="button"><p>2024-05</p></div>
+                        <p className="heading">Calculator</p>
+                        <p className='par'>The Vue.js Calculator is a feature-rich web application built using the <span>Vue.js framework</span>. It's my first project in this framework . Designed to deliver a seamless and intuitive user experience, this project showcases <span>the power of Vue.js</span> in creating dynamic and interactive web applications.</p>
+                        <div onClick={() => {
+                            window.location.href = 'https://calculator-vue-blond.vercel.app/'
+                        }} className="button"> <p>View</p> <span>
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M3.88153 12.6302C3.88153 12.3776 3.97758 12.1249 4.17035 11.9322L8.73614 7.36703L4.17035 2.80189C3.78548 2.41637 3.78548 1.79137 4.17035 1.40584C4.55587 1.02097 5.18087 1.02097 5.5664 1.40584L10.8296 6.669C11.2144 7.05453 11.2144 7.67953 10.8296 8.06506L5.5664 13.3282C5.18087 13.7131 4.55587 13.7131 4.17035 13.3282C3.97758 13.1355 3.88153 12.8828 3.88153 12.6302Z" />
+                                </svg>
+                            </span></div>
+                    </div>
+                    <img src={calc} alt="" />
+                </div>
+                <div ref={projectLeftRef1} className="box">
+                    <img src={info} alt="" />
+                    <div className="text">
+                        <div className="button"><p>2024-05</p></div>
+                        <p className="heading">Info Dashboard</p>
+                        <p className='par'>The Info Dashboard is a dynamic and interactive application built using Vue.js. Designed to present data in a <span>user-friendly</span> manner, this dashboard serves as a centralized hub for displaying a variety of information. Its clean and intuitive interface makes it easy for users to navigate through different data sets and gain insights quickly.</p>
+                        <div onClick={() => {
+                            window.location.href = 'https://info-task.vercel.app/'
+                        }} className="button"> <p>View</p> <span>
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M3.88153 12.6302C3.88153 12.3776 3.97758 12.1249 4.17035 11.9322L8.73614 7.36703L4.17035 2.80189C3.78548 2.41637 3.78548 1.79137 4.17035 1.40584C4.55587 1.02097 5.18087 1.02097 5.5664 1.40584L10.8296 6.669C11.2144 7.05453 11.2144 7.67953 10.8296 8.06506L5.5664 13.3282C5.18087 13.7131 4.55587 13.7131 4.17035 13.3282C3.97758 13.1355 3.88153 12.8828 3.88153 12.6302Z" />
+                                </svg>
+                            </span></div>
                     </div>
                 </div>
             </div>
